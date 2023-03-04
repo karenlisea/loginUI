@@ -1,13 +1,17 @@
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .login-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     justify-content: center;
     background-color: rgb(220, 235, 236);
     min-width: 400px;
@@ -17,13 +21,13 @@
     border-color:rgba(152, 207, 215, 0.467);
     border-width: 5px;
     border-style: solid;
+    z-index: 1;
 }
 
 #login-button{
     padding: 15px;
     margin-top: 20px;
-    border-radius: .5em;
-    background-color:rgb(41, 36, 36);;
+    background-color:rgb(41, 36, 36);
     color: white;
     border-radius: 20px;
     width: 50%;
@@ -48,4 +52,13 @@ h1 {
     font-size: 4rem;
     margin: 40px;
     color:dimgray;
+}
+
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vw;
+    z-index: 0;
 }
